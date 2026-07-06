@@ -1,0 +1,6 @@
+dataset/
+.ipynb_checkpoints/
+*.zip
+__pycache__/
+*.pyc
+**/.idea/
