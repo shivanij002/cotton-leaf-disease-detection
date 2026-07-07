@@ -1,107 +1,160 @@
-Cotton Leaf Disease Detection
+# 🌿 Cotton Leaf Disease Detection using Deep Learning
 
-A full-stack deep learning web application that detects diseases in cotton leaves using a trained MobileNetV2-based CNN model. Users can upload an image and receive instant disease classification results.
+A full-stack AI-powered web application that automatically detects cotton leaf diseases and their severity stage using a MobileNetV2-based Convolutional Neural Network (CNN). The application allows users to upload an image of a cotton leaf and receive an instant prediction through a simple web interface.
 
-Project Overview
+---
 
-This project helps in early detection of cotton leaf diseases using deep learning, which can assist farmers in reducing crop loss and improving yield.
+## 📌 Project Overview
 
-The system uses:
+Cotton is one of the most important agricultural crops, and timely disease detection is essential for improving crop health and reducing yield loss.
 
-A trained CNN model (MobileNetV2)
-Flask backend for prediction API
-HTML/CSS/JavaScript frontend for user interaction
+This project uses **Transfer Learning with MobileNetV2** to classify cotton leaf diseases into different disease categories and severity stages. The model is integrated into a Flask web application, enabling users to upload leaf images and receive predictions in real time.
 
-✨ Features
-📤 Upload cotton leaf images
-🧠 AI-based disease prediction
-⚡ Fast real-time results
-📊 High accuracy (~93%)
-🌐 Simple and user-friendly web interface
+---
 
-🛠️ Technologies Used
-Backend
-Python
-Flask
-TensorFlow / Keras
-OpenCV
-NumPy
-Frontend
-HTML
-CSS
-JavaScript
-Model
-MobileNetV2 (Transfer Learning)
-CNN (Convolutional Neural Network)
+## ✨ Features
 
-📂 Dataset Information
-Source: Kaggle dataset
-Total Images: ~4,800+
-Classes: 6 disease categories
-Each class divided into:
-Early stage
-Mid stage
-Severe stage
+- Upload cotton leaf images
+- Automatic disease detection
+- Disease severity prediction (Early, Mid, Severe)
+- Real-time prediction using Flask
+- Simple and user-friendly interface
+- Deep learning model with approximately **93% accuracy**
 
-📊 Model Performance
-Accuracy: 93%
-Trained using:
-Data augmentation
-Pretrained MobileNetV2
-Fine-tuning for better accuracy
+---
 
-🏗️ Project Structure
-cotton-leaf-disease-detection/
+## 🛠 Technologies Used
+
+### Programming Language
+- Python
+
+### Frontend
+- HTML
+- CSS
+- JavaScript
+
+### Backend
+- Flask
+- Flask-CORS
+
+### Deep Learning
+- TensorFlow
+- Keras
+- MobileNetV2
+
+### Image Processing
+- OpenCV
+- NumPy
+
+---
+
+## 📂 Dataset
+
+- Source: Kaggle
+- Total Images: Approximately 4,800+
+- Disease Classes: 6
+- Severity Levels:
+  - Early
+  - Mid
+  - Severe
+
+---
+
+## 📊 Model Performance
+
+| Metric | Value |
+|---------|-------|
+| Model | MobileNetV2 |
+| Accuracy | **93%** |
+| Framework | TensorFlow/Keras |
+
+---
+
+## 📸 Application Screenshots
+
+### Upload Page
+
+![Upload Page](screenshots/upload-page.png)
+
+---
+
+### Prediction Result
+
+![Prediction Result](screenshots/prediction-result.png)
+
+---
+
+## 📁 Project Structure
+
+```
+cotton-leaf-disease-detection
 │
-├── backend/
+├── backend
 │   ├── app.py
-│   ├── CottonPlantDisease.keras
+│   └── CottonPlantDisease.keras
 │
-├── frontend/
+├── frontend
+│   ├── css
+│   ├── js
+│   ├── images
+│   ├── vendor
 │   ├── index.html
-│   ├── predict.html
-│   ├── css/
-│   ├── js/
-│   └── vendor/
+│   └── predict.html
+│
+├── screenshots
+│   ├── upload-page.png
+│   └── prediction-result.png
 │
 ├── Cotton_Leaf_Disease_Detection.ipynb
 ├── requirements.txt
-└── .gitignore
+├── .gitignore
+└── README.md
+```
 
-⚙️ Installation & Setup
-1. Clone repository
+---
+
+## ⚙ Installation
+
+Clone the repository
+
+```bash
 git clone https://github.com/shivanij002/cotton-leaf-disease-detection.git
-cd cotton-leaf-disease-detection
-2. Create virtual environment (optional but recommended)
-python -m venv venv
-venv\Scripts\activate   # Windows
-3. Install dependencies
+```
+
+Install dependencies
+
+```bash
 pip install -r requirements.txt
-4. Run backend server
+```
+
+Run the Flask server
+
+```bash
 cd backend
 python app.py
+```
 
-▶️ How it works
-User uploads cotton leaf image
-Image is sent to Flask backend
-Model processes image using MobileNetV2
-Prediction is returned (disease class + stage)
-Result is displayed on UI
+Open the frontend in your browser and upload a cotton leaf image for prediction.
 
-📸 Screenshots
+---
 
-🔮 Future Improvements
-🌱 Mobile app version
-☁️ Cloud deployment (AWS / Azure)
-📡 Live camera detection
-📊 Disease severity visualization dashboard
+## 🚀 Future Enhancements
 
-👩‍💻 Author
+- Mobile application
+- Cloud deployment (AWS)
+- Real-time camera detection
+- Additional crop disease support
+- Improved UI/UX
 
-Shivani J
+---
 
-GitHub: https://github.com/shivanij002
-Project: Cotton Leaf Disease Detection
-⭐ If you like this project
+## 👩‍💻 Author
 
-Give it a ⭐ on GitHub and feel free to contribute!
+**Shivani J**
+
+GitHub:
+https://github.com/shivanij002
+
+---
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
